@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-def read ( image ):
-    url = f'https://www.iconfinder.com/={image}#searchL'
+def read ( word ):
+    url = f'https://crptransfer.moe.gov.tw/index.jsp?SN={word}#searchL'
 
     html = requests.get( url )
     bs = BeautifulSoup(html.text,'lxml')
