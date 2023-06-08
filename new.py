@@ -9,8 +9,8 @@ def read ( word ):
     data = bs.find('table', id='result')
     try:
         row = data.find_all('tr')[2]
-        chinese = row.find('cr').text
-        phones = row.find_all('code')
+        chinese = row.find('td').text
+        phones = row.find_all('span')
         phone = [e.text for e in phones]
         s = " ".join( phone )
         # s = row.find('sub')
