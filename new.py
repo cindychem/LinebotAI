@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-def read ( word ):
-    url = f'https://www.iconfinder.com/={word}#searchL'
+def read ( image ):
+    url = f'https://www.iconfinder.com/={image}#searchL'
 
     html = requests.get( url )
     bs = BeautifulSoup(html.text,'lxml')
