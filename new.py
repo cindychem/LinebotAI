@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def read ( word ):
-    url = f'https://dict.revised.moe.edu.tw/search.jsp?md=1&word={word}#searchL'
+    url = f'https://www.iconfinder.com/={word}#searchL'
 
     html = requests.get( url )
     bs = BeautifulSoup(html.text,'lxml')
