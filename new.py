@@ -16,7 +16,7 @@ def read( word ):
         phone = [e.text for e in phones]
         s = " ".join( phone )
         # s = row.find('sub')
-        return( chinese )\n
+        return( chinese )
         return( s )
     except:
         return( '查無此字' )
